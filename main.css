@@ -1,8 +1,40 @@
+*{
+  box-sizing: border-box;  /*sets border as part of size*/
+}
 img{
   max-width: 400px;
 }
 
+body {
+  font-family: sans-serif;
+  color: #222222;
+}
+
 .red_outline{
   border: 5px solid red;
-  padding: 3px 4px;
+  padding: 20px 35px;
+  background-color: azure;
+  margin: 10px;
+}
+
+#article1 section {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+  color: firebrick;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+}
+
+a:visited{
+  color: black;
+  text-decoration: line-through;
 }
