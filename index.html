@@ -12,6 +12,67 @@
       <li>Links</li>
     </ul>
   </header>
+
+  <!-- required attribute means that field has to be field out -->
+  <!-- fieldset groups input fields -->
+  <!-- label for matches id -->
+  <!-- generally don't want to style id's -->
+  <!-- submit does the forms action -->
+  <!-- disable disable's a button and makes it inactive -->
+  <!-- need value for non typed in inputs (radio's and checkboxes) -->
+
+  <form action="">
+    <fieldset>
+      <label for="firstname" class="hidden">First Name</label> 
+      <input type="text" required placeholder="First Name" name="firstname" id="firstname">
+
+      <label for="email" class="hidden">Email</label> <!--matches ID -->
+      <input type="email" required placeholder="foo@bar.com" id="email" name="email">
+
+      <label class="hidden" for="age"></label>
+      <input type="number" required name="age" min="18" max="120" placeholder="65" id="age">
+    </fieldset>
+
+    <label class="hidden" for="bio"></label>
+    <textarea placeholder="A little about yourself" id="bio"></textarea>
+
+    <label for="favcolor" class="hidden">Favorite Color</label>
+    <input required type="color" name="favcolor" id="favcolor">
+
+    <label for="website" class="hidden">Personal Site</label>
+    <input type="url" name="website" placeholder="http://nothing.com" id="website" class="min_input">
+
+    <input type="text" name="country" value="USA" readonly>
+
+    <fieldset>
+      <label for="peanuts">Peanuts</label>
+      <input type="checkbox" value="peanuts" checked id="peanuts" name="peanuts">
+
+      <label for="shellfish">Shellfish</label>
+      <input type="checkbox" value="shellfish" id="shellfish" name="shellfish">
+
+      <label for="soy">Soy</label>
+      <input type="checkbox" value="soy" id="soy" name="soy">
+
+      <label for="kiwis">Kiwis</label>
+      <input type="checkbox" value="kiwis" id="kiwis" name="kiwis">
+    </fieldset>
+
+    <fieldset>
+      <label for="red">Red</label>
+      <input type="radio" value="red" name="rgb" id="red">
+
+      <label for="green">Green</label>
+      <input type="radio" checked value="green" name="rgb" id="green">
+
+      <label for="blue">Blue</label>
+      <input type="radio" value="blue" name="rgb" id="blue">
+    </fieldset>
+
+    <input type="submit" value="Other Value" name="submit">
+    <button type="submit" disabled>Other Text</button>
+  </form>
+
   <!-- This section is about bacon. And Href's. -->
    <article id="article1">
     <section class="red_outline">
